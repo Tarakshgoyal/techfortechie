@@ -9,7 +9,7 @@ import { Search } from "lucide-react";
 const allCourses = [
   {
     id: "c-programming",
-    title: "🌟 C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
+    title: "C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
     description: "Learn real C programming with hands-on coding: variables, logic, functions, pointers, memory, arrays, strings & file handling. Live session on Nov 9, 2025 (10 AM - 2 PM). English/Hindi. Certificate included!",
     instructor: "Expert Instructor",
     duration: "4 hours",
