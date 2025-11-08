@@ -178,8 +178,65 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-12 px-4 sm:px-6 lg:px-8 border-t border-border">
-        <div className="container mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 TechForTechie. All rights reserved.</p>
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-bold text-lg mb-4">TechForTechie</h3>
+              <p className="text-muted-foreground text-sm">
+                Empowering learners with quality tech education and hands-on training.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/courses" className="text-muted-foreground hover:text-primary">
+                    Courses
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="text-muted-foreground hover:text-primary">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-muted-foreground hover:text-primary">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Legal</h4>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/privacy" className="text-muted-foreground hover:text-primary">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/terms" className="text-muted-foreground hover:text-primary">
+                    Terms of Service
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/refund" className="text-muted-foreground hover:text-primary">
+                    Refund Policy
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Contact Us</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Email: support@techfortechie.com</li>
+                <li>India</li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-center text-muted-foreground text-sm pt-8 border-t border-border">
+            <p>&copy; 2024 TechForTechie. All rights reserved. | Payments secured by Razorpay</p>
+          </div>
         </div>
       </footer>
     </div>
