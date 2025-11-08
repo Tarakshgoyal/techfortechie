@@ -7,13 +7,14 @@ import CourseCard from "@/components/CourseCard";
 const featuredCourses = [
   {
     id: "c-programming",
-    title: "🌟 C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
+    title: "C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
     description: "Learn real C programming: variables, logic, functions, pointers, memory, arrays, strings & file handling. English/Hindi. Nov 9, 2025 | 10 AM - 2 PM",
     instructor: "Expert Instructor",
     duration: "4 hours",
     students: 0,
     rating: 5.0,
     thumbnail: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=600&fit=crop",
+    available: true,
   },
   {
     id: "1",
@@ -24,6 +25,7 @@ const featuredCourses = [
     students: 5420,
     rating: 4.8,
     thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
+    available: false,
   },
   {
     id: "2",
@@ -34,6 +36,7 @@ const featuredCourses = [
     students: 3890,
     rating: 4.9,
     thumbnail: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=600&fit=crop",
+    available: false,
   },
 ];
 

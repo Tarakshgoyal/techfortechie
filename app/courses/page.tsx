@@ -17,6 +17,7 @@ const allCourses = [
     rating: 5.0,
     thumbnail: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=600&fit=crop",
     category: "Programming",
+    available: true,
   },
   {
     id: "1",
@@ -28,6 +29,7 @@ const allCourses = [
     rating: 4.8,
     thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
     category: "Web Development",
+    available: false,
   },
   {
     id: "2",
@@ -39,6 +41,7 @@ const allCourses = [
     rating: 4.9,
     thumbnail: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=600&fit=crop",
     category: "Data Science",
+    available: false,
   },
   {
     id: "3",
@@ -50,6 +53,7 @@ const allCourses = [
     rating: 4.7,
     thumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
     category: "Cloud",
+    available: false,
   },
   {
     id: "4",
@@ -61,6 +65,7 @@ const allCourses = [
     rating: 4.9,
     thumbnail: "https://images.unsplash.com/photo-1555255707-c07966088b7b?w=800&h=600&fit=crop",
     category: "AI/ML",
+    available: false,
   },
   {
     id: "5",
@@ -72,6 +77,7 @@ const allCourses = [
     rating: 4.6,
     thumbnail: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop",
     category: "Mobile",
+    available: false,
   },
   {
     id: "6",
@@ -83,6 +89,7 @@ const allCourses = [
     rating: 4.8,
     thumbnail: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop",
     category: "Security",
+    available: false,
   },
   {
     id: "7",
@@ -94,6 +101,7 @@ const allCourses = [
     rating: 4.7,
     thumbnail: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop",
     category: "DevOps",
+    available: false,
   },
   {
     id: "8",
@@ -105,6 +113,7 @@ const allCourses = [
     rating: 4.9,
     thumbnail: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
     category: "Design",
+    available: false,
   },
   {
     id: "9",
@@ -116,6 +125,7 @@ const allCourses = [
     rating: 4.6,
     thumbnail: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop",
     category: "Blockchain",
+    available: false,
   },
 ];
 
