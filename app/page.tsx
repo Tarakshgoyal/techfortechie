@@ -6,6 +6,16 @@ import CourseCard from "@/components/CourseCard";
 
 const featuredCourses = [
   {
+    id: "c-programming",
+    title: "🌟 C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
+    description: "Learn real C programming: variables, logic, functions, pointers, memory, arrays, strings & file handling. English/Hindi. Nov 9, 2025 | 10 AM - 2 PM",
+    instructor: "Expert Instructor",
+    duration: "4 hours",
+    students: 0,
+    rating: 5.0,
+    thumbnail: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=600&fit=crop",
+  },
+  {
     id: "1",
     title: "Full Stack Web Development",
     description: "Master modern web development with React, Node.js, and MongoDB",
@@ -24,16 +34,6 @@ const featuredCourses = [
     students: 3890,
     rating: 4.9,
     thumbnail: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&h=600&fit=crop",
-  },
-  {
-    id: "3",
-    title: "Cloud Computing with AWS",
-    description: "Complete guide to AWS services and cloud architecture",
-    instructor: "David Martinez",
-    duration: "8 weeks",
-    students: 2750,
-    rating: 4.7,
-    thumbnail: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=600&fit=crop",
   },
 ];
 

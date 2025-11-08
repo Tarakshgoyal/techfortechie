@@ -11,6 +11,46 @@ import { useToast } from "@/hooks/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 
 const coursesData = {
+  "c-programming": {
+    title: "🌟 C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
+    description: "Learn how to write real C programs by understanding variables, logic, functions, pointers, memory, arrays, strings, and file handling — with hands-on coding. Perfect for beginners, students preparing for coding interviews, and learners shifting to programming.",
+    instructor: "Expert Instructor",
+    duration: "4 hours",
+    students: 0,
+    rating: 5.0,
+    thumbnail: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=1200&h=600&fit=crop",
+    price: "₹499",
+    level: "Beginner",
+    modules: [
+      "Hour 1: C Essentials & Fundamentals - Setup, Syntax, Variables, Data Types, Operators, I/O",
+      "Hour 2: Logic Building with Control Structures - Conditions, Loops, Patterns, Menu Programs",
+      "Hour 3: Functions, Arrays & Pointers Mastery - Functions, Scope, Arrays, Pointer Basics & Arithmetic",
+      "Hour 4: Strings, Memory & File Handling - Character Arrays, String Functions, File Read/Write",
+    ],
+    activities: [
+      "Hello Universe Challenge - Customize your first C program",
+      "Mini Calculator - Build a working calculator with +, -, *, /",
+      "Smart Menu Program - Create an interactive menu-driven application",
+      "Pattern Sprint - Print star and number patterns",
+      "Double Swap Challenge - Swap numbers with and without pointers",
+      "Reverse Array Using Pointers - Master pointer traversal",
+      "Student Records Manager - Save and display data using files",
+      "Mini Project - Student Information Manager (Take Home)",
+    ],
+    skills: ["C Programming", "Pointers", "Memory Management", "File Handling", "Logic Building", "Problem Solving"],
+    overview: "This intensive 4-hour live bootcamp will transform you from a complete beginner to a confident C programmer. Learn through hands-on activities including calculators, pattern printing, pointer manipulation, and file handling. The course is taught in English/Hindi and includes a free certificate upon completion.",
+    schedule: "📅 November 9, 2025 | 🕐 10:00 AM - 2:00 PM IST",
+    language: "English/Hindi",
+    certificate: "Free Certificate upon completion",
+    outcomes: [
+      "Understand C program structure & logic building",
+      "Use variables, conditions & loops efficiently",
+      "Write modular code using functions",
+      "Work confidently with arrays & pointers",
+      "Handle strings and memory",
+      "Store & retrieve data using files",
+    ],
+  },
   "1": {
     title: "Full Stack Web Development",
     description: "Master modern web development with React, Node.js, and MongoDB. Build full-stack applications from scratch.",
@@ -239,7 +279,7 @@ export default function CourseDetail({ params }: { params: Promise<{ id: string 
                         key={index}
                         className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"
                       >
-                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
+                        <div className="shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
                           {index + 1}
                         </div>
                         <span className="flex-1">{module}</span>
@@ -249,6 +289,67 @@ export default function CourseDetail({ params }: { params: Promise<{ id: string 
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Special sections for C Programming course */}
+              {id === "c-programming" && (
+                <>
+                  {/* Schedule */}
+                  {"schedule" in course && course.schedule && (
+                    <Card className="border-2 border-accent">
+                      <CardHeader>
+                        <CardTitle className="text-accent">📅 Live Session Schedule</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-lg font-semibold">{course.schedule}</p>
+                        {"language" in course && course.language && (
+                          <p className="text-muted-foreground mt-2">🌐 Language: {course.language}</p>
+                        )}
+                        {"certificate" in course && course.certificate && (
+                          <p className="text-muted-foreground mt-1">🏆 {course.certificate}</p>
+                        )}
+                      </CardContent>
+                    </Card>
+                  )}
+
+                  {/* Hands-on Activities */}
+                  {"activities" in course && course.activities && (
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>🎯 Hands-on Activities</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-2">
+                          {course.activities.map((activity: string, index: number) => (
+                            <div key={index} className="flex items-start gap-3 p-2">
+                              <CheckCircle className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                              <span className="text-sm">{activity}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
+
+                  {/* Learning Outcomes */}
+                  {"outcomes" in course && course.outcomes && (
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>✅ Learning Outcomes</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="space-y-2">
+                          {course.outcomes.map((outcome: string, index: number) => (
+                            <div key={index} className="flex items-start gap-3 p-2">
+                              <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                              <span className="text-sm">{outcome}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  )}
+                </>
+              )}
             </div>
 
             {/* Sidebar */}

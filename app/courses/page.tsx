@@ -8,6 +8,17 @@ import { Search } from "lucide-react";
 
 const allCourses = [
   {
+    id: "c-programming",
+    title: "🌟 C Programming Zero-to-Hero in 4 Hours — Live Bootcamp",
+    description: "Learn real C programming with hands-on coding: variables, logic, functions, pointers, memory, arrays, strings & file handling. Live session on Nov 9, 2025 (10 AM - 2 PM). English/Hindi. Certificate included!",
+    instructor: "Expert Instructor",
+    duration: "4 hours",
+    students: 0,
+    rating: 5.0,
+    thumbnail: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=800&h=600&fit=crop",
+    category: "Programming",
+  },
+  {
     id: "1",
     title: "Full Stack Web Development",
     description: "Master modern web development with React, Node.js, and MongoDB. Build full-stack applications from scratch.",
